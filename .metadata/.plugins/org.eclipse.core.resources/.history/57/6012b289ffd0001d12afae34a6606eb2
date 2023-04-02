@@ -1,0 +1,16 @@
+package com.pfe.filter;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.filter.OncePerRequestFilter;
+
+import com.pfe.config.UserInfoUserDetailsService;
+import com.pfe.service.JwtService;
+
+public class JwtAuthFilter extends OncePerRequestFilter {
+
+	@Autowired
+	private JwtService jwtService;
+	
+	@Autowired
+	private UserInfoUserDetailsService userDetailsService;
+}

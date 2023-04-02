@@ -1,0 +1,7 @@
+package com.pfe.service;
+
+public class JwtService {
+	
+	public static final String SECRET = "3F4528482B4D6251655468576D597133743677397A24432646294A404E635266";
+
+}

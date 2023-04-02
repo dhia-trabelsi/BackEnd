@@ -1,0 +1,8 @@
+package com.pfe.filter;
+
+
+import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
+
+public class AuthFilter extends AbstractGatewayFilterFactory<AuthFilter.Config> {
+
+}

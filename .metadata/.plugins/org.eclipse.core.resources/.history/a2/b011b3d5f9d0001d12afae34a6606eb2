@@ -1,0 +1,5 @@
+package com.pfe.repository;
+
+public interface UserRepository {
+
+}
