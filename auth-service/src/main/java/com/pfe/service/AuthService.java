@@ -18,6 +18,7 @@ public class AuthService {
 	
 	public String addUser(UserInfo userInfo) {
         userInfo.setPassword(passwordEncoder.encode(userInfo.getPassword()));
+		userInfo.setRoles("USER");
         repository.save(userInfo);
         return "user added to system";
     }
